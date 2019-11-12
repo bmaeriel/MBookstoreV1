@@ -14,9 +14,19 @@
                         </div>
                     @endif
 
-                    You are logged in as a ordinary user!
+                    Hi {{ Auth::user()->name }}!
                     <br/>
-                    <a href="{{ route('user.books.index') }}"> Books </a>
+                    You are logged in as a user!
+                    <br/>
+                    Check out the <a href="{{ route('user.books.index') }}"> Books</a>!
+
+                    <br/>
+                    <br/>
+                    Account Details: <br/>
+                    Email: {{Auth::user()->email}} <br/>
+                    Address: {{Auth::user()->customer->address}}<br/>
+                    Address: {{Auth::user()->customer->phone}}
+
                 </div>
             </div>
         </div>

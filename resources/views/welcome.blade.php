@@ -10,7 +10,7 @@
                 <div class="card-body">
                     👑 Welcome to MBookstore 📚👑
                     <br/>
-                    <a href="{{ route('admin.books.index')}}"> Books</a>
+                    <a href="{{ route('user.home')}}"> Dashboard</a>
                     <br/>
                     Learn more <a href="{{ route('about')}}"> about us</a>!
                 </div>

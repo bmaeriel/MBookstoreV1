@@ -2,7 +2,7 @@
 # @Author: maerielbenedicto
 # @Date:   2019-08-27T22:26:48+01:00
 # @Last modified by:   maerielbenedicto
-# @Last modified time: 2019-11-02T15:38:23+00:00
+# @Last modified time: 2019-11-12T00:21:37+00:00
 
 
 
@@ -44,6 +44,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function customer(){
+      return $this->hasOne('App\Customer');
+    }
+
     public function roles(){
       return $this->belongsToMany('App\Role','user_role');
     }
@@ -63,4 +67,6 @@ class User extends Authenticatable
     public function hasAnyRole($roles) {
       return null != $this->roles()->whereIn('name',$roles)->first();
     }
+
+
 }
