@@ -30,7 +30,14 @@
               </div>
               <div class="form-group">
                 <label for="publisher">Publisher</label>
-                <input type="text" class="form-control" id="publisher" name="publisher" value="{{ old('publisher') }}" />
+                <select class="form-control" name="publisher_id">
+                  <option value="">Select one </option>
+                  @foreach ($publishers as $publisher)
+                    <option value="{{ $publisher->id}}" {{ old('publisher_id') == $publisher->id ? "selected" : "" }} >
+                      {{ $publisher->name}}
+                    </option>
+                  @endforeach
+                </select>
               </div>
               <div class="form-group">
                 <label for="year">Year</label>

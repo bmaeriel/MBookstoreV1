@@ -2,7 +2,7 @@
 # @Author: maerielbenedicto
 # @Date:   2019-11-12T00:22:20+00:00
 # @Last modified by:   maerielbenedicto
-# @Last modified time: 2019-11-12T00:41:49+00:00
+# @Last modified time: 2019-11-17T16:53:41+00:00
 
 
 
@@ -30,6 +30,7 @@ class CustomersTableSeeder extends Seeder
         $customer->save();
       }
     }
+
     //only accessible within customer table seeder
     private function random_str($length, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
     {

@@ -8,11 +8,12 @@
                 <div class="card-header">Welcome</div>
 
                 <div class="card-body">
-                    👑 Welcome to MBookstore 📚👑
-                    <br/>
-                    <a href="{{ route('user.home')}}"> Dashboard</a>
-                    <br/>
-                    Learn more <a href="{{ route('about')}}"> about us</a>!
+                      👑 Welcome to MBookstore 📚👑
+                      <br/>
+                      <a href="{{ route('user.home')}}"> Dashboard</a>
+                      <br/>
+                      <a href="{{ route('user.books.index')}}"> Books</a>!</br>
+                      Learn more <a href="{{ route('about')}}"> about us</a>!
                 </div>
             </div>
         </div>

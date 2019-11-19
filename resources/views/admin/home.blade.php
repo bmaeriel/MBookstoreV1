@@ -15,9 +15,10 @@
 
                     Hi {{ Auth::user()->name }}!
                     <br/>
-                    You are now logged in as an Admin.
+                    You are now logged in as an Admin. </br>
+                    <a href="{{ route('admin.books.index')}}"> Books</a>!</br>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
 </div>

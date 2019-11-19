@@ -2,7 +2,7 @@
 # @Author: maerielbenedicto
 # @Date:   2019-08-27T22:26:48+01:00
 # @Last modified by:   maerielbenedicto
-# @Last modified time: 2019-11-12T00:33:49+00:00
+# @Last modified time: 2019-11-17T19:03:18+00:00
 
 
 
@@ -21,5 +21,6 @@ class DatabaseSeeder extends Seeder
         $this->call(RolesTableSeeder::class);
         $this->call(UsersTableSeeder::class);
         $this->call(CustomersTableSeeder::class);
+        $this->call(PublishersTableSeeder::class);
     }
 }
